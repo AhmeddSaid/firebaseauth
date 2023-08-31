@@ -6,9 +6,9 @@ import Welcome from "./components/Welcome";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/firebaseauth">
       <Routes>
-        <Route index element={<Homepage />} />
+        <Route path="/" element={<Homepage />} />
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
         <Route path="welcome" element={<Welcome />} />
